@@ -30,6 +30,38 @@ a {
   margin: 0 auto;
 }
 
+.page {
+  position: absolute;
+  top: 130px;
+  left: 16%;
+  right: 16%;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.home-main-body {
+  margin-top: 2rem;
+}
+
 .code-icon {
   color: #ff00ff;
   display: inline-block;
@@ -65,17 +97,6 @@ a {
   cursor: pointer;
   border-bottom: 0.1rem solid #ff00ff;
   font-weight: bold;
-}
-
-.main-body {
-  margin-top: 4rem;
-  border-radius: 0.5rem;
-  padding: 2rem;
-}
-
-.main-body-contact {
-  margin-top: 5rem;
-  color: white;
 }
 
 .lead {
@@ -129,4 +150,96 @@ a {
 .contact-btn:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
+}
+
+.fa-angle-right {
+  color: #ff00ff;
+}
+
+.email-icon,
+.phone-icon {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.github-icon,
+.linkedin-icon {
+  padding: 1rem;
+}
+
+.email-address:hover,
+.phone-number:hover {
+  cursor: pointer;
+  border-bottom: 0.1rem solid #ff00ff;
+  font-weight: bold;
+}
+
+.fa-angle-right {
+  color: #ff00ff;
+}
+
+.github-link,
+.linkedin-link,
+.email-address,
+.phone-number {
+  font-size: 2rem;
+  transition: border;
+  transition-duration: 200ms;
+}
+
+.github-link:hover,
+.linkedin-link:hover {
+  cursor: pointer;
+  border-bottom: 0.1rem solid #ff00ff;
+  font-weight: bold;
+}
+
+.github-contact-container {
+  height: 200px;
+  width: 49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.1rem solid #ff00ff;
+}
+
+.linkedin-contact-container {
+  height: 200px;
+  width: 49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-contact-container {
+  height: 200px;
+  width: 49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.1rem solid #ff00ff;
+}
+
+.phone-contact-container {
+  height: 200px;
+  width: 49%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-two-contacts {
+  border-bottom: 0.1rem solid #ff00ff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.copyright-year {
+  color: #ff00ff;
+  display: inline-block;
 }
