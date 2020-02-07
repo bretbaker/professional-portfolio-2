@@ -1,19 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Navbar = () => {
+const Navbar = props => {
+  const [pg, setPg] = useState(null);
+
+  const navClick = p => {
+    props.setPage(p);
+    setPg(p);
+    console.log(p);
+  };
+
   return (
     <nav>
       <div className='nav-options'>
-        <div className='nav-option' tabIndex='1'>
-          <Link to='/'>HOME</Link>
-        </div>
-        <div className='nav-option' tabIndex='1'>
-          <Link to='/projects'>PROJECTS</Link>
-        </div>
-        <div className='nav-option' tabIndex='1'>
-          <Link to='/contact'>CONTACT</Link>
-        </div>
+        {pg === 0 ? (
+          <Link to='/' className='nav-option-1' onClick={() => navClick(0)}>
+            HOME
+          </Link>
+        ) : (
+          <Link to='/' className='nav-option-0' onClick={() => navClick(0)}>
+            HOME
+          </Link>
+        )}
+        {pg === 1 ? (
+          <Link
+            to='/projects'
+            className='nav-option-1'
+            onClick={() => navClick(1)}
+          >
+            PROJECTS
+          </Link>
+        ) : (
+          <Link
+            to='/projects'
+            className='nav-option-0'
+            onClick={() => navClick(1)}
+          >
+            PROJECTS
+          </Link>
+        )}
+        {pg === 2 ? (
+          <Link
+            to='/contact'
+            className='nav-option-1'
+            onClick={() => navClick(2)}
+          >
+            CONTACT
+          </Link>
+        ) : (
+          <Link
+            to='/contact'
+            className='nav-option-0'
+            onClick={() => navClick(2)}
+          >
+            CONTACT
+          </Link>
+        )}
       </div>
       <Link to='/'>
         <i className='code-icon fas fa-code fa-3x'></i>
@@ -24,6 +67,10 @@ const Navbar = () => {
       </Link>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  setPage: PropTypes.func.isRequired
 };
 
 export default Navbar;
