@@ -104,7 +104,6 @@ a {
   display: inline-block;
   padding: 1rem;
   border-bottom: 0.1rem solid #ff00ff;
-  font-weight: bold;
 }
 
 .nav-option-0:hover,
@@ -247,14 +246,51 @@ a {
   border-bottom: 0.1rem solid #ff00ff;
 }
 
+.project-row {
+  display: flex;
+  justify-content: space-evenly;
+  /* border-bottom: 0.1rem solid #ff00ff; */
+  margin-bottom: 3rem;
+}
+
+.project-box {
+  display: inline-block;
+  text-align: center;
+}
+
+.project-box:hover {
+  cursor: pointer;
+}
+
+.project-box:hover > .project-title {
+  font-weight: bold;
+}
+
+.project-box:hover > .laptop-img {
+  transform: scale(1.1, 1.1);
+}
+
+.project-title {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.laptop-img {
+  width: 400px;
+  transition: transform;
+  transition-duration: 200ms;
+}
+
 .footer-fixed {
   position: fixed;
   bottom: 1rem;
-  width: 100%;
+  width: 960px;
   text-align: center;
 }
 
 .footer-static {
+  position: static;
+  width: 100%;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 1rem;

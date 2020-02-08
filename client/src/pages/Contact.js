@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterFixed from '../components/FooterFixed';
 
 function Contact() {
   return (
@@ -47,6 +48,7 @@ function Contact() {
           </a>
         </div>
       </div>
+      <FooterFixed />
     </div>
   );
 }

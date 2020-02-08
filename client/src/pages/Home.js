@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FooterFixed from '../components/FooterFixed';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <FooterFixed />
     </div>
   );
 };

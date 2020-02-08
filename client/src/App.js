@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Background from './components/Background';
 import Navbar from './components/Navbar';
-import FooterFixed from './components/FooterFixed';
-import FooterStatic from './components/FooterStatic';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -18,7 +16,7 @@ function App() {
     <Router>
       <Background />
       <div className='container'>
-        <Navbar setPage={setPage} />
+        <Navbar page={page} setPage={setPage} />
         <Route
           render={({ location }) => (
             <TransitionGroup>
@@ -33,7 +31,6 @@ function App() {
           )}
         />
       </div>
-      {page === 1 ? <FooterStatic /> : <FooterFixed />}
     </Router>
   );
 }
