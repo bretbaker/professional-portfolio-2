@@ -1,20 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Navbar = props => {
-  const [pg, setPg] = useState(null);
-
   const navClick = p => {
     props.setPage(p);
-    setPg(p);
-    console.log(p);
   };
 
   return (
     <nav>
       <div className='nav-options'>
-        {pg === 0 ? (
+        {props.page === 0 ? (
           <Link to='/' className='nav-option-1' onClick={() => navClick(0)}>
             HOME
           </Link>
@@ -23,7 +19,7 @@ const Navbar = props => {
             HOME
           </Link>
         )}
-        {pg === 1 ? (
+        {props.page === 1 ? (
           <Link
             to='/projects'
             className='nav-option-1'
@@ -40,7 +36,7 @@ const Navbar = props => {
             PROJECTS
           </Link>
         )}
-        {pg === 2 ? (
+        {props.page === 2 ? (
           <Link
             to='/contact'
             className='nav-option-1'
@@ -58,7 +54,7 @@ const Navbar = props => {
           </Link>
         )}
       </div>
-      <Link to='/'>
+      <Link to='/' onClick={() => navClick(0)}>
         <i className='code-icon fas fa-code fa-3x'></i>
         <div className='main-name-div'>
           <h1 className='main-name'>BRET BAKER</h1>
@@ -70,6 +66,7 @@ const Navbar = props => {
 };
 
 Navbar.propTypes = {
+  page: PropTypes.number.isRequired,
   setPage: PropTypes.func.isRequired
 };
 

@@ -103,20 +103,20 @@ a {
 .nav-option-1 {
   display: inline-block;
   padding: 1rem;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
 }
 
 .nav-option-0:hover,
 .nav-option-1:hover {
   cursor: pointer;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
   font-weight: bold;
 }
 
 .lead {
   font-size: 4rem;
   color: white;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
   display: inline-block;
 }
 
@@ -136,7 +136,7 @@ a {
 
 .here-link:hover {
   cursor: pointer;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
   font-weight: bold;
 }
 
@@ -184,7 +184,7 @@ a {
 .email-address:hover,
 .phone-number:hover {
   cursor: pointer;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
   font-weight: bold;
 }
 
@@ -204,7 +204,7 @@ a {
 .github-link:hover,
 .linkedin-link:hover {
   cursor: pointer;
-  border-bottom: 0.1rem solid #ff00ff;
+  border-bottom: 0.2rem solid #ff00ff;
   font-weight: bold;
 }
 
@@ -248,31 +248,36 @@ a {
 
 .project-row {
   display: flex;
-  justify-content: space-evenly;
-  /* border-bottom: 0.1rem solid #ff00ff; */
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+  padding: 0 1rem;
 }
 
 .project-box {
   display: inline-block;
   text-align: center;
+  width: 400px;
 }
 
 .project-box:hover {
   cursor: pointer;
 }
 
-.project-box:hover > .project-title {
-  font-weight: bold;
-}
-
 .project-box:hover > .laptop-img {
   transform: scale(1.1, 1.1);
+}
+
+.project-box:hover > .project-title {
+  text-decoration: underline;
+  text-decoration-color: #ff00ff;
 }
 
 .project-title {
   font-size: 2rem;
   display: inline-block;
+  margin: 2rem 0;
+  transition: transform;
+  transition-duration: 200ms;
 }
 
 .laptop-img {
