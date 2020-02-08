@@ -249,7 +249,7 @@ a {
 .project-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   padding: 0 1rem;
 }
 
@@ -275,7 +275,7 @@ a {
 .project-title {
   font-size: 2rem;
   display: inline-block;
-  margin: 2rem 0;
+  margin: 1rem 0;
   transition: transform;
   transition-duration: 200ms;
 }

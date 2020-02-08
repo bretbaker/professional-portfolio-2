@@ -10,7 +10,7 @@ import './App.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function App() {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(null);
 
   return (
     <Router>
