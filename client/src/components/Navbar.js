@@ -66,7 +66,7 @@ const Navbar = props => {
 };
 
 Navbar.propTypes = {
-  page: PropTypes.number.isRequired,
+  page: PropTypes.number,
   setPage: PropTypes.func.isRequired
 };
 

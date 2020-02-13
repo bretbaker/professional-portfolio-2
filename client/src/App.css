@@ -282,6 +282,7 @@ a {
 
 .laptop-img {
   width: 400px;
+  height: 400px;
   transition: transform;
   transition-duration: 200ms;
 }
