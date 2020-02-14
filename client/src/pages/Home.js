@@ -11,7 +11,11 @@ const Home = props => {
   return (
     <div className='page'>
       <div className='home-main-body'>
-        <h1 className='lead'>Full Stack Web Development.</h1>
+        <h1 className='lead-lg'>Full Stack Web Development.</h1>
+        <div className='lead-md'>
+          <h2 className='lead-md-0'>Full Stack</h2>
+          <h2 className='lead-md-1'>Web Development.</h2>
+        </div>
         <p className='main-paragraph'>
           I am a Full Stack Web Developer proficient front-to-back. I can{' '}
           <Link
@@ -55,7 +59,7 @@ const Home = props => {
 };
 
 Home.propTypes = {
-  page: PropTypes.number.isRequired,
+  page: PropTypes.number,
   setPage: PropTypes.func.isRequired
 };
 

@@ -19,16 +19,16 @@ a {
 
 .background-img {
   position: fixed;
-  height: 1000px;
-  /* width: 100vw; */
+  height: 100%;
+  width: auto;
   z-index: -2;
 }
 
 .background-overlay {
   background-color: rgba(64, 0, 128, 0.8);
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -89,8 +89,12 @@ a {
   color: #ff00ff;
 }
 
-.nav-options {
+.nav-options-lg {
   float: right;
+}
+
+.nav-options-sm {
+  display: none;
 }
 
 .nav-option-0 {
@@ -113,11 +117,15 @@ a {
   font-weight: bold;
 }
 
-.lead {
+.lead-lg {
   font-size: 4rem;
   color: white;
   border-bottom: 0.2rem solid #ff00ff;
   display: inline-block;
+}
+
+.lead-md {
+  display: none;
 }
 
 .main-paragraph {
@@ -168,6 +176,10 @@ a {
 
 .fa-angle-right {
   color: #ff00ff;
+}
+
+.contacts-sm {
+  display: none;
 }
 
 .email-icon,
@@ -305,4 +317,107 @@ a {
 .copyright-year {
   color: #ff00ff;
   display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) {
+  .background-img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container,
+  .page,
+  .footer-fixed {
+    width: 740px;
+  }
+  .lead-lg {
+    display: none;
+  }
+  .lead-md {
+    display: inline-block;
+    font-size: 4rem;
+    border-bottom: 0.2rem solid #ff00ff;
+  }
+  .laptop-img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container,
+  .footer-fixed {
+    width: 580px;
+  }
+  .page {
+    width: 580px;
+    top: 25%;
+  }
+  .home-main-body {
+    padding: 0;
+    width: 404px;
+    margin: 0 auto;
+  }
+  .lead-md {
+    font-size: 3rem;
+  }
+  .main-paragraph {
+    font-size: 1.25rem;
+  }
+  .contact-btn-1 {
+    margin-bottom: 2rem;
+  }
+  .project-row {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .nav-options-lg {
+    display: none;
+  }
+  .nav-options-sm {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container,
+  .project-box,
+  .footer-fixed {
+    width: 320px;
+  }
+  .page {
+    width: 320px;
+    top: 30%;
+  }
+  .home-main-body {
+    width: 303px;
+  }
+  .lead-md {
+    font-size: 2.25rem;
+  }
+  .contacts-lg {
+    display: none;
+  }
+  .contacts-sm {
+    display: block;
+  }
+  .nav-options-sm {
+    justify-content: space-between;
+  }
+  .project-row {
+    padding: 0;
+  }
 }
