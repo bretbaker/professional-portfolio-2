@@ -20,17 +20,6 @@ const Projects = () => {
           <img src={proj0} alt='' className='laptop-img' />
         </a>
         <a
-          href='https://github.com/bretbaker/bootcamp-api'
-          target='_blank'
-          className='project-box'
-          rel='noopener noreferrer'
-        >
-          <h3 className='project-title'>Bootcamp API</h3>
-          <img src={proj1} alt='' className='laptop-img' />
-        </a>
-      </div>
-      <div className='project-row'>
-        <a
           href='https://github.com/bretbaker/contact-manager'
           target='_blank'
           className='project-box'
@@ -38,6 +27,17 @@ const Projects = () => {
         >
           <h3 className='project-title'>Contact Manager</h3>
           <img src={proj2} alt='' className='laptop-img' />
+        </a>
+      </div>
+      <div className='project-row'>
+        <a
+          href='https://github.com/bretbaker/bootcamp-api'
+          target='_blank'
+          className='project-box'
+          rel='noopener noreferrer'
+        >
+          <h3 className='project-title'>Bootcamp API</h3>
+          <img src={proj1} alt='' className='laptop-img' />
         </a>
         <a
           href='https://github.com/bretbaker/github-finder'

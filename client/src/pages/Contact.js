@@ -56,7 +56,7 @@ function Contact() {
             <div className='contact-info'>
               <a
                 className='github-link'
-                href='http://www.github.com'
+                href='https://github.com/bretbaker'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -68,7 +68,7 @@ function Contact() {
             <div className='contact-info'>
               <a
                 className='linkedin-link'
-                href='http://www.linkedin.com'
+                href='https://www.linkedin.com/in/bret-baker-09b12a19a/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -86,7 +86,7 @@ function Contact() {
         </div>
         <div className='phone-contact-container'>
           <div>
-            <a className='phone-number' href='tel:813-892-0410'>
+            <a className='phone-number' href='tel:1-813-892-0410'>
               <i className='phone-icon fas fa-phone fa-2x'></i>
             </a>
           </div>
