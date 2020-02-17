@@ -58,17 +58,17 @@ const Navbar = props => {
         <i className='code-icon fas fa-code fa-3x'></i>
         <div className='main-name-div'>
           <h1 className='main-name'>BRET BAKER</h1>
-          <h2 className='main-name-2'>WEB DEVELOPMENT</h2>
+          <h2 className='main-name-2'>SOFTWARE DEVELOPMENT</h2>
         </div>
       </Link>
       <div className='nav-options-sm'>
         {props.page === 0 ? (
           <Link to='/' className='nav-option-1' onClick={() => navClick(0)}>
-            <i class='fas fa-home fa-2x'></i>
+            <i className='fas fa-home fa-2x'></i>
           </Link>
         ) : (
           <Link to='/' className='nav-option-0' onClick={() => navClick(0)}>
-            <i class='fas fa-home fa-2x'></i>
+            <i className='fas fa-home fa-2x'></i>
           </Link>
         )}
         {props.page === 1 ? (
@@ -77,7 +77,7 @@ const Navbar = props => {
             className='nav-option-1'
             onClick={() => navClick(1)}
           >
-            <i class='fas fa-folder-open fa-2x'></i>
+            <i className='fas fa-folder-open fa-2x'></i>
           </Link>
         ) : (
           <Link
@@ -85,7 +85,7 @@ const Navbar = props => {
             className='nav-option-0'
             onClick={() => navClick(1)}
           >
-            <i class='fas fa-folder-open fa-2x'></i>
+            <i className='fas fa-folder-open fa-2x'></i>
           </Link>
         )}
         {props.page === 2 ? (
@@ -94,7 +94,7 @@ const Navbar = props => {
             className='nav-option-1'
             onClick={() => navClick(2)}
           >
-            <i class='fas fa-address-book fa-2x'></i>
+            <i className='fas fa-address-book fa-2x'></i>
           </Link>
         ) : (
           <Link
@@ -102,7 +102,7 @@ const Navbar = props => {
             className='nav-option-0'
             onClick={() => navClick(2)}
           >
-            <i class='fas fa-address-book fa-2x'></i>
+            <i className='fas fa-address-book fa-2x'></i>
           </Link>
         )}
       </div>

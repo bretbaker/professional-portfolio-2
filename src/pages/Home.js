@@ -11,13 +11,13 @@ const Home = props => {
   return (
     <div className='page'>
       <div className='home-main-body'>
-        <h1 className='lead-lg'>Full Stack Web Development.</h1>
+        <h1 className='lead-lg'>Full Stack Development.</h1>
         <div className='lead-md'>
           <h2 className='lead-md-0'>Full Stack</h2>
-          <h2 className='lead-md-1'>Web Development.</h2>
+          <h2 className='lead-md-1'>Development.</h2>
         </div>
         <p className='main-paragraph'>
-          I am a Full Stack Web Developer proficient front-to-back. I can{' '}
+          I am a Full Stack Software Developer proficient front-to-back. I can{' '}
           <Link
             className='here-link'
             to='/projects'
@@ -28,7 +28,7 @@ const Home = props => {
           you what you want. Whether it be a native mobile application, a
           full-service business site, or a robust progressive web program, you
           name it and I will get it done. If you are looking to hire top tier
-          web developer talent, please contact me{' '}
+          software developer talent, please contact me{' '}
           <Link className='here-link' to='/contact' onClick={() => navClick(2)}>
             here
           </Link>
