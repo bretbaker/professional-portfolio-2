@@ -304,6 +304,16 @@ a {
   transition-duration: 200ms;
 }
 
+.not-found {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.four-oh-four {
+  color: #ff00ff;
+}
+
 .footer-fixed {
   position: fixed;
   bottom: 1rem;

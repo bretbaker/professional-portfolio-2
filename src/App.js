@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 import './App.css';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -31,7 +32,7 @@ function App() {
                   />
                   <Route exact path='/projects' component={Projects} />
                   <Route exact path='/contact' component={Contact} />
-                  {/* <Route component={} */}
+                  <Route component={NotFound} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
