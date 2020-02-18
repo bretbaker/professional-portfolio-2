@@ -1,7 +1,7 @@
 [build]
   publish='build'
 
-# [[redirects]]
-#   from = "/*"
-#   to = "/"
-#   status = 302
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200

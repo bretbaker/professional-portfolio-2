@@ -31,6 +31,7 @@ function App() {
                   />
                   <Route exact path='/projects' component={Projects} />
                   <Route exact path='/contact' component={Contact} />
+                  {/* <Route component={} */}
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
