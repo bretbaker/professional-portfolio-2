@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 const Home = props => {
   const navClick = p => {
+    window.scroll(0, 0);
     props.setPage(p);
   };
 
@@ -25,10 +26,10 @@ const Home = props => {
           >
             build
           </Link>{' '}
-          you what you want. Whether it be a native mobile application, a
-          full-service business site, or a robust progressive web program, you
-          name it and I will get it done. If you are looking to hire top tier
-          software developer talent, please contact me{' '}
+          you what you want. Whether it be a progressive wep app, a full-service
+          business site, or a native mobile app, you name it and I will get it
+          done. If you are looking to hire top tier software developer talent,
+          please contact me{' '}
           <Link className='here-link' to='/contact' onClick={() => navClick(2)}>
             here
           </Link>
