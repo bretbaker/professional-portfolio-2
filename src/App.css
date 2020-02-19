@@ -426,7 +426,6 @@ a {
   }
   .page {
     width: 320px;
-    top: 35%;
   }
   .home-main-body {
     width: 303px;
@@ -453,6 +452,7 @@ a {
   }
   .page {
     width: 300px;
+    top: 35%;
   }
   .home-main-body {
     width: 280px;
