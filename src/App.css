@@ -111,6 +111,17 @@ a {
   border-bottom: 0.2rem solid #ff00ff;
 }
 
+.nav-option-0-sm {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.nav-option-1-sm {
+  display: inline-block;
+  padding: 1rem;
+  color: #ff00ff;
+}
+
 .nav-option-0:hover,
 .nav-option-1:hover {
   cursor: pointer;
@@ -325,7 +336,7 @@ a {
   position: static;
   width: 100%;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -453,7 +464,7 @@ a {
     position: static;
     width: 100%;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
 }
@@ -463,7 +474,7 @@ a {
     position: static;
     width: 100%;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
 }

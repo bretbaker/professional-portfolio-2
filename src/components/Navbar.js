@@ -63,18 +63,18 @@ const Navbar = props => {
       </Link>
       <div className='nav-options-sm'>
         {props.page === 0 ? (
-          <Link to='/' className='nav-option-1' onClick={() => navClick(0)}>
+          <Link to='/' className='nav-option-1-sm' onClick={() => navClick(0)}>
             <i className='fas fa-home fa-2x'></i>
           </Link>
         ) : (
-          <Link to='/' className='nav-option-0' onClick={() => navClick(0)}>
+          <Link to='/' className='nav-option-0-sm' onClick={() => navClick(0)}>
             <i className='fas fa-home fa-2x'></i>
           </Link>
         )}
         {props.page === 1 ? (
           <Link
             to='/projects'
-            className='nav-option-1'
+            className='nav-option-1-sm'
             onClick={() => navClick(1)}
           >
             <i className='fas fa-folder-open fa-2x'></i>
@@ -82,7 +82,7 @@ const Navbar = props => {
         ) : (
           <Link
             to='/projects'
-            className='nav-option-0'
+            className='nav-option-0-sm'
             onClick={() => navClick(1)}
           >
             <i className='fas fa-folder-open fa-2x'></i>
@@ -91,7 +91,7 @@ const Navbar = props => {
         {props.page === 2 ? (
           <Link
             to='/contact'
-            className='nav-option-1'
+            className='nav-option-1-sm'
             onClick={() => navClick(2)}
           >
             <i className='fas fa-address-book fa-2x'></i>
@@ -99,7 +99,7 @@ const Navbar = props => {
         ) : (
           <Link
             to='/contact'
-            className='nav-option-0'
+            className='nav-option-0-sm'
             onClick={() => navClick(2)}
           >
             <i className='fas fa-address-book fa-2x'></i>
