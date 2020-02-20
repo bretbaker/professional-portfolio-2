@@ -55,7 +55,7 @@ const Navbar = props => {
         )}
       </div>
       <Link className='brand' to='/' onClick={() => navClick(0)}>
-        <i className='code-icon fas fa-code fa-3x'></i>
+        <i className='code-icon fas fa-laptop-code fa-3x'></i>
         <div className='main-name-div'>
           <h1 className='main-name'>BRET BAKER</h1>
           <h2 className='main-name-2'>SOFTWARE DEVELOPMENT</h2>

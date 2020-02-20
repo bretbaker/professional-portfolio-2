@@ -12,10 +12,14 @@ const Home = props => {
   return (
     <div className='page'>
       <div className='home-main-body'>
-        <h1 className='lead-lg'>Full Stack Development.</h1>
+        <h1 className='lead-lg'>Full Stack Software Development</h1>
         <div className='lead-md'>
           <h2 className='lead-md-0'>Full Stack</h2>
-          <h2 className='lead-md-1'>Development.</h2>
+          <h2 className='lead-md-1'>
+            Software
+            <br />
+            Development
+          </h2>
         </div>
         <p className='main-paragraph'>
           I am a Full Stack Software Developer proficient front-to-back. I can{' '}

@@ -75,7 +75,7 @@ a {
   display: inline-block;
   margin-right: 1rem;
   position: relative;
-  top: -0.3rem;
+  top: -0.2rem;
 }
 
 .main-name-div {
@@ -130,7 +130,7 @@ a {
 }
 
 .lead-lg {
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   border-bottom: 0.2rem solid #ff00ff;
   display: inline-block;
