@@ -11,7 +11,7 @@ function Contact() {
               <i className='github-icon fab fa-github fa-2x'></i>
               <a
                 className='github-link'
-                href='http://www.github.com'
+                href='https://github.com/bretbaker'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -24,7 +24,7 @@ function Contact() {
               <i className='linkedin-icon fab fa-linkedin fa-2x'></i>
               <a
                 className='linkedin-link'
-                href='http://www.linkedin.com'
+                href='https://www.linkedin.com/in/bret-baker-09b12a19a/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
@@ -44,7 +44,7 @@ function Contact() {
         <div className='phone-contact-container'>
           <div>
             <i className='phone-icon fas fa-phone fa-2x'></i>
-            <a className='phone-number' href='tel:813-892-0410'>
+            <a className='phone-number' href='tel:1-813-892-0410'>
               Phone
             </a>
           </div>
