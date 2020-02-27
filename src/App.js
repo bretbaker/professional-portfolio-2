@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Background from './components/Background';
+// import Background from './components/Background';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <Background />
+      {/* <Background /> */}
       <div className='container'>
         <Navbar page={page} setPage={setPage} />
         <Route

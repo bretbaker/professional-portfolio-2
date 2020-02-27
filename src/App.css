@@ -5,6 +5,8 @@ html {
 body {
   font-family: 'Righteous', cursive;
   color: white;
+  background-image: url('./img/background-img-1.jpg');
+  /* background-size: cover; */
 }
 
 nav {
