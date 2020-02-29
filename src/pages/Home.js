@@ -30,10 +30,20 @@ const Home = props => {
           >
             build
           </Link>{' '}
-          you what you want. Whether it be a progressive wep app, a full-service
-          business site, or a native mobile app, you name it and I will get it
-          done. If you are looking to hire top tier software developer talent,
-          please contact me{' '}
+          you what you want. Technologies I am currently utilizing include:
+          <br />
+          <br />
+          <span className='technology-underline'>Front End</span>: HTML, CSS,
+          JavaScript, React, Redux, jQuery, Bootstrap, Materialize
+          <br />
+          <br />
+          <span className='technology-underline'>Back End</span>: JavaScript,
+          Node, Express, MongoDB, MySQL, Git, JSON, REST API
+          <br />
+          <br />
+          Whether it be a progressive wep app, a full-service business site, or
+          a native mobile app, you name it and I will get it done. If you are
+          looking to hire top tier software developer talent, please contact me{' '}
           <Link className='here-link' to='/contact' onClick={() => navClick(2)}>
             here
           </Link>

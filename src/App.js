@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 import NotFound from './pages/NotFound';
 
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
                   />
                   <Route exact path='/projects' component={Projects} />
                   <Route exact path='/contact' component={Contact} />
+                  <Route exact path='/resume' component={Resume} />
                   <Route component={NotFound} />
                 </Switch>
               </CSSTransition>

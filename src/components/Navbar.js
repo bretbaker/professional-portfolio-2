@@ -38,9 +38,26 @@ const Navbar = props => {
         )}
         {props.page === 2 ? (
           <Link
-            to='/contact'
+            to='/resume'
             className='nav-option-1'
             onClick={() => navClick(2)}
+          >
+            RESUME
+          </Link>
+        ) : (
+          <Link
+            to='/resume'
+            className='nav-option-0'
+            onClick={() => navClick(2)}
+          >
+            RESUME
+          </Link>
+        )}
+        {props.page === 3 ? (
+          <Link
+            to='/contact'
+            className='nav-option-1'
+            onClick={() => navClick(3)}
           >
             CONTACT
           </Link>
@@ -48,7 +65,7 @@ const Navbar = props => {
           <Link
             to='/contact'
             className='nav-option-0'
-            onClick={() => navClick(2)}
+            onClick={() => navClick(3)}
           >
             CONTACT
           </Link>
@@ -64,11 +81,13 @@ const Navbar = props => {
       <div className='nav-options-sm'>
         {props.page === 0 ? (
           <Link to='/' className='nav-option-1-sm' onClick={() => navClick(0)}>
-            <i className='fas fa-home fa-2x'></i>
+            <i className='fas fa-home fa-2x sm-icon'></i>
+            <p className='sm-icon-text-underline'>HOME</p>
           </Link>
         ) : (
           <Link to='/' className='nav-option-0-sm' onClick={() => navClick(0)}>
-            <i className='fas fa-home fa-2x'></i>
+            <i className='fas fa-home fa-2x sm-icon'></i>
+            <p className='sm-icon-text'>HOME</p>
           </Link>
         )}
         {props.page === 1 ? (
@@ -77,7 +96,8 @@ const Navbar = props => {
             className='nav-option-1-sm'
             onClick={() => navClick(1)}
           >
-            <i className='fas fa-folder-open fa-2x'></i>
+            <i className='fas fa-folder-open fa-2x sm-icon'></i>
+            <p className='sm-icon-text-underline'>PROJECTS</p>
           </Link>
         ) : (
           <Link
@@ -85,24 +105,46 @@ const Navbar = props => {
             className='nav-option-0-sm'
             onClick={() => navClick(1)}
           >
-            <i className='fas fa-folder-open fa-2x'></i>
+            <i className='fas fa-folder-open fa-2x sm-icon'></i>
+            <p className='sm-icon-text'>PROJECTS</p>
           </Link>
         )}
         {props.page === 2 ? (
           <Link
-            to='/contact'
+            to='/resume'
             className='nav-option-1-sm'
             onClick={() => navClick(2)}
           >
-            <i className='fas fa-address-book fa-2x'></i>
+            <i className='fas fa-file fa-2x sm-icon'></i>
+            <p className='sm-icon-text-underline'>RESUME</p>
+          </Link>
+        ) : (
+          <Link
+            to='/resume'
+            className='nav-option-0-sm'
+            onClick={() => navClick(2)}
+          >
+            <i className='fas fa-file fa-2x sm-icon'></i>
+            <p className='sm-icon-text'>RESUME</p>
+          </Link>
+        )}
+        {props.page === 3 ? (
+          <Link
+            to='/contact'
+            className='nav-option-1-sm'
+            onClick={() => navClick(3)}
+          >
+            <i className='fas fa-address-book fa-2x sm-icon'></i>
+            <p className='sm-icon-text-underline'>CONTACT</p>
           </Link>
         ) : (
           <Link
             to='/contact'
             className='nav-option-0-sm'
-            onClick={() => navClick(2)}
+            onClick={() => navClick(3)}
           >
-            <i className='fas fa-address-book fa-2x'></i>
+            <i className='fas fa-address-book fa-2x sm-icon'></i>
+            <p className='sm-icon-text'>CONTACT</p>
           </Link>
         )}
       </div>
