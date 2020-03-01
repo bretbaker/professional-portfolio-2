@@ -173,6 +173,10 @@ iframe {
   line-height: 2rem;
 }
 
+.comma {
+  color: #ff00ff;
+}
+
 .technology-underline {
   border-bottom: 0.2rem solid #ff00ff;
 }

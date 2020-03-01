@@ -33,12 +33,24 @@ const Home = props => {
           you what you want. Technologies I am currently utilizing include:
           <br />
           <br />
-          <span className='technology-underline'>Front End</span>: HTML, CSS,
-          JavaScript, React, Redux, jQuery, Bootstrap, Materialize
+          <span className='technology-underline'>Front End</span>
+          <span className='comma'>:</span> HTML
+          <span className='comma'>, </span>CSS<span className='comma'>, </span>{' '}
+          JavaScript<span className='comma'>, </span>React
+          <span className='comma'>, </span>Redux
+          <span className='comma'>, </span>jQuery
+          <span className='comma'>, </span>Bootstrap
+          <span className='comma'>, </span>Materialize
           <br />
           <br />
-          <span className='technology-underline'>Back End</span>: JavaScript,
-          Node, Express, MongoDB, MySQL, Git, JSON, REST API
+          <span className='technology-underline'>Back End</span>
+          <span className='comma'>:</span> JavaScript
+          <span className='comma'>, </span> Node
+          <span className='comma'>, </span>Express
+          <span className='comma'>, </span>MongoDB
+          <span className='comma'>, </span>MySQL<span className='comma'>,</span>{' '}
+          Git<span className='comma'>, </span>JSON
+          <span className='comma'>, </span>REST API
           <br />
           <br />
           Whether it be a progressive wep app, a full-service business site, or
