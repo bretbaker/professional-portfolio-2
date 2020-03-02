@@ -30,27 +30,30 @@ const Home = props => {
           >
             build
           </Link>{' '}
-          you what you want. Technologies I am currently utilizing include:
+          you what you want. Technologies I am currently utilizing include
+          <span className='fuscia'>:</span>
           <br />
           <br />
           <span className='technology-underline'>Front End</span>
-          <span className='comma'>:</span> HTML
-          <span className='comma'>, </span>CSS<span className='comma'>, </span>{' '}
-          JavaScript<span className='comma'>, </span>React
-          <span className='comma'>, </span>Redux
-          <span className='comma'>, </span>jQuery
-          <span className='comma'>, </span>Bootstrap
-          <span className='comma'>, </span>Materialize
+          <span className='fuscia'>:</span> HTML
+          <span className='fuscia'>, </span>CSS
+          <span className='fuscia'>, </span>JavaScript
+          <span className='fuscia'>, </span>React
+          <span className='fuscia'>, </span>Redux
+          <span className='fuscia'>, </span>jQuery
+          <span className='fuscia'>, </span>Bootstrap
+          <span className='fuscia'>, </span>Materialize
           <br />
           <br />
           <span className='technology-underline'>Back End</span>
-          <span className='comma'>:</span> JavaScript
-          <span className='comma'>, </span> Node
-          <span className='comma'>, </span>Express
-          <span className='comma'>, </span>MongoDB
-          <span className='comma'>, </span>MySQL<span className='comma'>,</span>{' '}
-          Git<span className='comma'>, </span>JSON
-          <span className='comma'>, </span>REST API
+          <span className='fuscia'>:</span> JavaScript
+          <span className='fuscia'>, </span>Node
+          <span className='fuscia'>, </span>Express
+          <span className='fuscia'>, </span>MongoDB
+          <span className='fuscia'>, </span>MySQL
+          <span className='fuscia'>,</span> Git
+          <span className='fuscia'>, </span>JSON
+          <span className='fuscia'>, </span>REST API
           <br />
           <br />
           Whether it be a progressive wep app, a full-service business site, or
