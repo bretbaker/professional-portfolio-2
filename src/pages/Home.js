@@ -35,7 +35,7 @@ const Home = props => {
           <br />
           <br />
           <span className='technology-underline'>Front End</span>
-          <span className='fuscia'>:</span> HTML
+          <span className='fuscia'>: </span>HTML
           <span className='fuscia'>, </span>CSS
           <span className='fuscia'>, </span>JavaScript
           <span className='fuscia'>, </span>React
@@ -46,12 +46,12 @@ const Home = props => {
           <br />
           <br />
           <span className='technology-underline'>Back End</span>
-          <span className='fuscia'>:</span> JavaScript
+          <span className='fuscia'>: </span>JavaScript
           <span className='fuscia'>, </span>Node
           <span className='fuscia'>, </span>Express
           <span className='fuscia'>, </span>MongoDB
           <span className='fuscia'>, </span>MySQL
-          <span className='fuscia'>,</span> Git
+          <span className='fuscia'>, </span>Git
           <span className='fuscia'>, </span>JSON
           <span className='fuscia'>, </span>REST API
           <br />
