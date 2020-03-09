@@ -56,9 +56,10 @@ const Home = props => {
           <span className='fuscia'>, </span>REST API
           <br />
           <br />
-          Whether it be a progressive wep app, a full-service business site, or
-          a native mobile app, you name it and I will get it done. If you are
-          looking to hire top tier software developer talent, please contact me{' '}
+          Whether it be a progressive web application, a full-service business
+          site, or a native mobile app, you name it and I will get it done. If
+          you are looking to hire top tier software developer talent, please
+          contact me{' '}
           <Link className='here-link' to='/contact' onClick={() => navClick(2)}>
             here
           </Link>
